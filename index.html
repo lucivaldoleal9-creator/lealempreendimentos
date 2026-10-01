@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
     <style>
         :root {
             --cor-preto: #111111;
-            --cor-preto-suave: #1a1a1a;
+            --cor-preto-suve: #1a1a1a;
             --cor-vermelho: #cc0000;
             --cor-vermelho-hover: #990000;
             --cor-branco: #ffffff;
@@ -96,16 +96,25 @@
             letter-spacing: 1px;
         }
 
+        .placa-link-whats {
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 15px;
+            transition: transform 0.2s;
+        }
+
+        .placa-link-whats:hover {
+            transform: scale(1.03);
+        }
+
         .placa-telefone {
             font-size: 2.2rem;
             font-weight: bold;
             color: var(--cor-branco);
             background-color: rgba(255, 255, 255, 0.05);
-            display: inline-block;
             padding: 10px 30px;
             border-radius: 50px;
             border: 2px dashed var(--cor-vermelho);
-            margin-bottom: 15px;
         }
 
         .placa-creci {
@@ -284,7 +293,7 @@
         @media (max-width: 600px) {
             .placa-titulo { font-size: 1.8rem; }
             .placa-subtitulo { font-size: 1rem; }
-            .placa-telefone { font-size: 1.5rem; padding: 8px 20px; }
+            .placa-telefone { font-size: 1.4rem; padding: 8px 20px; }
             .secao-sobre h2 { font-size: 1.6rem; }
         }
     </style>
@@ -302,9 +311,11 @@
             <div class="placa-tag">Vende & Aluga</div>
             <div class="placa-titulo">Leal Empreendimentos</div>
             <div class="placa-subtitulo">Consultoria Imobiliária Completa</div>
-            <div class="placa-telefone">
-                <i class="fa-solid fa-phone"></i> (83) 98787-9427
-            </div>
+            <a href="https://whatsapp.com!" target="_blank" class="placa-link-whats">
+                <div class="placa-telefone">
+                    <i class="fa-solid fa-phone"></i> (83) 98787-9427
+                </div>
+            </a>
             <div class="placa-creci">Lucivaldo Jorge Leal — CRECI-PB 6466</div>
         </div>
     </section>
@@ -317,16 +328,5 @@
             <p>Com uma sólida trajetória de <strong>20 anos de experiência</strong> no ramo imobiliário na Paraíba, o corretor <strong>Lucivaldo Jorge Leal</strong> pauta seu trabalho pela ética, transparência e compromisso absoluto com o cliente.</p>
             <p class="destaque-sonho"><i class="fa-solid fa-house-chimney"></i> Já realizamos o sonho da casa própria de várias pessoas e famílias!</p>
             
-         <!-- Botões de Ação Direta -->
+            <!-- Botões de Ação Direta -->
             <div class="botoes-contato">
-                <a href="https://whatsapp.com!" target="_blank" class="btn btn-whats">
-                    <i class="fa-brands fa-whatsapp"></i> Fale no WhatsApp
-                </a>
-                <a href="https://instagram.com" target="_blank" class="btn btn-insta">
-                    <i class="fa-brands fa-instagram"></i> Siga no Instagram
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Diferenciais Positivos da Imobiliária -->
